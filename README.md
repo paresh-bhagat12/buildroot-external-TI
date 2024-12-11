@@ -68,13 +68,13 @@ information refer
 - Clone the Buildroot repository to local machine.
 
 ```bash
-$ git clone -b 2024.05.1 https://github.com/buildroot/buildroot
+$ git clone -b 2024.05.3 https://github.com/buildroot/buildroot
 ```
 
 - Clone the `BR2_EXTERNAL` tree:
 
 ```bash
-$ git clone -b 10.00.07 https://github.com/TexasInstruments/buildroot-external-TI.git
+$ git clone -b 10.01.10.04 https://github.com/TexasInstruments/buildroot-external-TI.git
 ```
 
 - The directories for `buildroot` and `buildroot-external-ti` are now located
@@ -101,10 +101,10 @@ buildroot/ $ make BR2_EXTERNAL=../buildroot-external-TI ti_release_am62x_sk_defc
 - To further customize the Buildroot configuration, run `make menuconfig`. This
 step is optional but useful if you need to make specific adjustments.
 
-- Build the SD card image for SDK 10.0
+- Build the SD card image for SDK 10.1
 
 ```bash
-buildroot/ $ make TI_K3_BOOT_FIRMWARE_VERSION=10.00.07
+buildroot/ $ make TI_K3_BOOT_FIRMWARE_VERSION=10.01.10
 ```
 
 - This process compiles the necessary components and creates the root filesystem,
